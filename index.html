@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NICOLE FASHION | Moda y Tecnología</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           GOOGLE IA - POMELLI
+        ========================================= */
+
+        .google-ia-seccion {
+            background: #F7EFE8;
+        }
+
+        .imagen-google-ia {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 0 15px 35px rgba(74, 20, 35, 0.15);
+        }
+
+        .google-ia-seccion h3 {
+            color: #6B1E32;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .google-ia-seccion p {
+            color: #5A3E46;
+        }
+
+        .tarjeta-pomelli {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            height: 100%;
+            box-shadow: 0 10px 25px rgba(74, 20, 35, 0.08);
+            transition: 0.3s;
+        }
+
+        .tarjeta-pomelli:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta-pomelli i {
+            font-size: 35px;
+            color: #6B1E32;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-pomelli h4 {
+            color: #6B1E32;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .pomelli-datos {
+            margin-top: 25px;
+        }
+
+        .pomelli-datos div {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 12px 0;
+            border-bottom: 1px solid #eadbd5;
+        }
+
+        .pomelli-datos strong {
+            color: #6B1E32;
+        }
+
+        .pomelli-datos span {
+            color: #5A3E46;
+        }
+
+        @media (max-width: 768px) {
+
+            .imagen-google-ia {
+                height: 350px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BARRA DE NAVEGACIÓN
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-nicole fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+            <img src="Logotipo de moda Nicole Fashion (1).png"
+                 alt="Logo NICOLE FASHION"
+                 class="logo-navbar">
+
+            <span>NICOLE FASHION</span>
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link active" href="index.html">
+
+                        Inicio
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="javascript.html">
+
+                        JavaScript
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="jquery.html">
+
+                        jQuery
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="json.html">
+
+                        JSON
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="hosting.html">
+
+                        Hosting
+
+                    </a>
+
+                </li>
+
+
+                <!-- GOOGLE IA -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#google-ia">
+
+                        Google IA
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="cuestionario.html">
+
+                        Cuestionario
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item ms-lg-2">
+
+                    <button id="modoBtn"
+                            class="btn btn-modo"
+                            type="button">
+
+                        <i class="bi bi-moon-stars-fill"></i>
+
+                    </button>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO / CARRUSEL
+===================================================== -->
+
+<header class="hero">
+
+    <div id="carruselNicole"
+         class="carousel slide carousel-fade"
+         data-bs-ride="carousel">
+
+
+        <!-- INDICADORES -->
+
+        <div class="carousel-indicators">
+
+            <button type="button"
+                    data-bs-target="#carruselNicole"
+                    data-bs-slide-to="0"
+                    class="active">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#carruselNicole"
+                    data-bs-slide-to="1">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#carruselNicole"
+                    data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+
+
+        <!-- IMÁGENES -->
+
+        <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+
+                <img src="92b9cc34-328c-4fe6-b886-ef3f7c98bbb8.png"
+                     class="d-block w-100"
+                     alt="Vestido elegante NICOLE FASHION">
+
+                <div class="carousel-caption">
+
+                    <p class="texto-pequeno">
+
+                        NICOLE FASHION
+
+                    </p>
+
+                    <h1>
+
+                        Elegancia que habla por ti
+
+                    </h1>
+
+                    <p>
+
+                        Moda femenina, identidad y creatividad
+                        en una sola marca.
+
+                    </p>
+
+                    <a href="#producto"
+                       class="btn btn-nicole">
+
+                        Conocer la marca
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="carousel-item">
+
+                <img src="vestido.png"
+                     class="d-block w-100"
+                     alt="Colección de vestidos">
+
+                <div class="carousel-caption">
+
+                    <p class="texto-pequeno">
+
+                        COLECCIÓN
+
+                    </p>
+
+                    <h2>
+
+                        Diseños para cada momento
+
+                    </h2>
+
+                    <p>
+
+                        Prendas pensadas para expresar
+                        seguridad y estilo.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="carousel-item">
+
+                <img src="img/accesorios.jpg"
+                     class="d-block w-100"
+                     alt="Accesorios de moda">
+
+                <div class="carousel-caption">
+
+                    <p class="texto-pequeno">
+
+                        ESTILO NICOLE
+
+                    </p>
+
+                    <h2>
+
+                        Los detalles también cuentan
+
+                    </h2>
+
+                    <p>
+
+                        Complementa tu estilo con accesorios
+                        seleccionados para cada outfit.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ANTERIOR -->
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carruselNicole"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+            <span class="visually-hidden">
+
+                Anterior
+
+            </span>
+
+        </button>
+
+
+
+        <!-- SIGUIENTE -->
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carruselNicole"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+            <span class="visually-hidden">
+
+                Siguiente
+
+            </span>
+
+        </button>
+
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PRESENTACIÓN DEL PRODUCTO
+===================================================== -->
+
+<main>
+
+
+<section id="producto"
+         class="seccion seccion-clara">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion">
+
+            <p>
+
+                NUESTRA MARCA
+
+            </p>
+
+            <h2>
+
+                ¿Qué es NICOLE FASHION?
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-6">
+
+                <img src="img/vestido3.jpg"
+                     alt="Producto NICOLE FASHION"
+                     class="imagen-seccion">
+
+            </div>
+
+
+
+            <div class="col-lg-6">
+
+                <span class="etiqueta">
+
+                    PRODUCTO ORIGINAL
+
+                </span>
+
+
+                <h3>
+
+                    Moda femenina con identidad propia
+
+                </h3>
+
+
+                <p>
+
+                    NICOLE FASHION es una propuesta de moda femenina
+                    creada para presentar prendas y accesorios
+                    elegantes de una manera moderna, sencilla y
+                    atractiva.
+
+                </p>
+
+
+                <p>
+
+                    La marca combina moda y tecnología mediante
+                    un sitio web interactivo donde los visitantes
+                    pueden conocer la colección, descubrir el estilo
+                    de la marca y aprender conceptos relacionados
+                    con el desarrollo web.
+
+                </p>
+
+
+
+                <div class="datos-producto">
+
+
+                    <div>
+
+                        <strong>
+
+                            Nombre comercial
+
+                        </strong>
+
+                        <span>
+
+                            NICOLE FASHION
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+
+                            Categoría
+
+                        </strong>
+
+                        <span>
+
+                            Moda femenina
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+
+                            Estilo
+
+                        </strong>
+
+                        <span>
+
+                            Elegante y moderno
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PÚBLICO OBJETIVO
+===================================================== -->
+
+<section class="seccion seccion-vino">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion titulo-blanco">
+
+            <p>
+
+                IDENTIDAD
+
+            </p>
+
+            <h2>
+
+                ¿A quién está dirigido?
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="tarjeta-info">
+
+                    <i class="bi bi-person-heart"></i>
+
+                    <h3>
+
+                        Mujeres jóvenes
+
+                    </h3>
+
+                    <p>
+
+                        Personas interesadas en encontrar
+                        prendas modernas para diferentes
+                        ocasiones.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="tarjeta-info">
+
+                    <i class="bi bi-bag-heart"></i>
+
+                    <h3>
+
+                        Personas amantes de la moda
+
+                    </h3>
+
+                    <p>
+
+                        Usuarios que disfrutan conocer nuevas
+                        tendencias y combinar diferentes prendas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="tarjeta-info">
+
+                    <i class="bi bi-phone"></i>
+
+                    <h3>
+
+                        Usuarios digitales
+
+                    </h3>
+
+                    <p>
+
+                        Personas que utilizan páginas web para
+                        descubrir productos y marcas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROPUESTA DE VALOR
+===================================================== -->
+
+<section class="seccion seccion-clara">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion">
+
+            <p>
+
+                NUESTRA PROPUESTA
+
+            </p>
+
+            <h2>
+
+                ¿Qué hace especial a NICOLE FASHION?
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-6">
+
+                <h3>
+
+                    Moda + Tecnología
+
+                </h3>
+
+
+                <p>
+
+                    Nuestra propuesta de valor consiste en combinar
+                    la presentación de productos de moda con una
+                    experiencia digital clara, visual e interactiva.
+
+                </p>
+
+
+                <ul class="lista-check">
+
+
+                    <li>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Diseño elegante y femenino
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Catálogo visual de productos
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Información organizada
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Navegación sencilla
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Tecnologías web explicadas de forma práctica
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="col-lg-6">
+
+                <img src="img/vestido1.jpg"
+                     alt="Moda NICOLE FASHION"
+                     class="imagen-redonda">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PALETA DE COLORES
+===================================================== -->
+
+<section class="seccion paleta">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion">
+
+            <p>
+
+                IDENTIDAD VISUAL
+
+            </p>
+
+            <h2>
+
+                Paleta de colores
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="color-card">
+
+                    <div class="color-muestra vino"></div>
+
+                    <h3>
+
+                        Vino
+
+                    </h3>
+
+                    <strong>
+
+                        #6B1E32
+
+                    </strong>
+
+                    <p>
+
+                        Representa elegancia, seguridad y
+                        personalidad.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="color-card">
+
+                    <div class="color-muestra crema"></div>
+
+                    <h3>
+
+                        Crema
+
+                    </h3>
+
+                    <strong>
+
+                        #F7EFE8
+
+                    </strong>
+
+                    <p>
+
+                        Aporta tranquilidad, limpieza y
+                        delicadeza.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="color-card">
+
+                    <div class="color-muestra dorado"></div>
+
+                    <h3>
+
+                        Dorado
+
+                    </h3>
+
+                    <strong>
+
+                        #C9A86A
+
+                    </strong>
+
+                    <p>
+
+                        Transmite lujo, calidad y exclusividad.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TECNOLOGÍAS DEL PROYECTO
+===================================================== -->
+
+<section class="seccion seccion-clara">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion">
+
+            <p>
+
+                INVESTIGACIÓN
+
+            </p>
+
+            <h2>
+
+                Tecnologías del sitio
+
+            </h2>
+
+            <p class="descripcion-titulo">
+
+                Explora cada sección para conocer cómo funcionan
+                las tecnologías utilizadas en el desarrollo web.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- JAVASCRIPT -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <a href="javascript.html"
+                   class="tech-card">
+
+                    <div class="tech-imagen">
+
+                        <img src="img/javascript.jpg"
+                             alt="JavaScript">
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <i class="bi bi-filetype-js"></i>
+
+                        <h3>
+
+                            JavaScript
+
+                        </h3>
+
+                        <p>
+
+                            Interactividad, eventos,
+                            variables y funciones.
+
+                        </p>
+
+                        <span>
+
+                            Ver investigación →
+
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- JQUERY -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <a href="jquery.html"
+                   class="tech-card">
+
+                    <div class="tech-imagen">
+
+                        <img src="img/jquery.jpg"
+                             alt="jQuery">
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <i class="bi bi-code-slash"></i>
+
+                        <h3>
+
+                            jQuery
+
+                        </h3>
+
+                        <p>
+
+                            Selectores, eventos y
+                            efectos para páginas web.
+
+                        </p>
+
+                        <span>
+
+                            Ver investigación →
+
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- JSON -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <a href="json.html"
+                   class="tech-card">
+
+                    <div class="tech-imagen">
+
+                        <img src="img/json.jpg"
+                             alt="JSON">
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <i class="bi bi-braces"></i>
+
+                        <h3>
+
+                            JSON
+
+                        </h3>
+
+                        <p>
+
+                            Formato utilizado para
+                            intercambiar información.
+
+                        </p>
+
+                        <span>
+
+                            Ver investigación →
+
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- HOSTING -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <a href="hosting.html"
+                   class="tech-card">
+
+                    <div class="tech-imagen">
+
+                        <img src="img/hosting.jpg"
+                             alt="Web Hosting">
+
+                    </div>
+
+                    <div class="tech-info">
+
+                        <i class="bi bi-cloud-arrow-up"></i>
+
+                        <h3>
+
+                            Hosting
+
+                        </h3>
+
+                        <p>
+
+                            Publicación de páginas web,
+                            dominios y DNS.
+
+                        </p>
+
+                        <span>
+
+                            Ver investigación →
+
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GOOGLE IA - POMELLI
+===================================================== -->
+
+<section id="google-ia"
+         class="seccion google-ia-seccion">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion">
+
+            <p>
+
+                INTELIGENCIA ARTIFICIAL
+
+            </p>
+
+            <h2>
+
+                Google IA - Pomelli
+
+            </h2>
+
+            <p class="descripcion-titulo">
+
+                Una herramienta de inteligencia artificial
+                relacionada con la creación de contenido para marcas.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row align-items-center g-5">
+
+
+            <!-- IMAGEN DE POMELLI -->
+
+            <div class="col-lg-6">
+
+                <img src="img/pomelli.jpg"
+                     alt="Google IA Pomelli"
+                     class="imagen-google-ia">
+
+            </div>
+
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="col-lg-6">
+
+                <span class="etiqueta">
+
+                    GOOGLE LABS
+
+                </span>
+
+
+                <h3>
+
+                    ¿Qué es Pomelli?
+
+                </h3>
+
+
+                <p>
+
+                    Pomelli es una herramienta de inteligencia
+                    artificial de Google Labs que ayuda a generar
+                    contenido relacionado con una marca.
+
+                </p>
+
+
+                <p>
+
+                    La herramienta puede analizar elementos de una
+                    identidad de marca y utilizar esa información
+                    para ayudar a crear ideas y contenido visual.
+
+                </p>
+
+
+
+                <div class="pomelli-datos">
+
+
+                    <div>
+
+                        <strong>
+
+                            Herramienta
+
+                        </strong>
+
+                        <span>
+
+                            Pomelli
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+
+                            Empresa
+
+                        </strong>
+
+                        <span>
+
+                            Google Labs
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+
+                            Área
+
+                        </strong>
+
+                        <span>
+
+                            Inteligencia Artificial
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+
+                            Aplicación
+
+                        </strong>
+
+                        <span>
+
+                            Marketing y contenido
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARACTERÍSTICAS -->
+
+        <div class="row g-4 mt-5">
+
+
+            <div class="col-md-4">
+
+                <div class="tarjeta-pomelli">
+
+                    <i class="bi bi-palette-fill"></i>
+
+                    <h4>
+
+                        Identidad de marca
+
+                    </h4>
+
+                    <p>
+
+                        Puede trabajar con elementos visuales
+                        relacionados con la identidad de una marca.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="tarjeta-pomelli">
+
+                    <i class="bi bi-megaphone-fill"></i>
+
+                    <h4>
+
+                        Campañas
+
+                    </h4>
+
+                    <p>
+
+                        Puede ayudar a desarrollar ideas de
+                        contenido para campañas de una marca.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="tarjeta-pomelli">
+
+                    <i class="bi bi-stars"></i>
+
+                    <h4>
+
+                        Inteligencia artificial
+
+                    </h4>
+
+                    <p>
+
+                        Utiliza inteligencia artificial para
+                        apoyar la creación de contenido.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- POMELLI EN NICOLE FASHION -->
+
+        <div class="row mt-5">
+
+
+            <div class="col-12">
+
+                <div class="tarjeta-pomelli">
+
+
+                    <span class="etiqueta">
+
+                        NICOLE FASHION
+
+                    </span>
+
+
+                    <h3>
+
+                        ¿Cómo se relaciona con nuestro proyecto?
+
+                    </h3>
+
+
+                    <p>
+
+                        Pomelli se relaciona con NICOLE FASHION
+                        porque nuestra página representa una marca
+                        de moda y utiliza una identidad visual propia.
+
+                    </p>
+
+
+                    <p>
+
+                        Sus colores vino, crema y dorado, junto con
+                        las fotografías de prendas y el logotipo,
+                        forman parte de la identidad visual de la marca.
+
+                    </p>
+
+
+                    <p>
+
+                        Por esta razón, la inteligencia artificial
+                        puede relacionarse con la creación de ideas
+                        para contenido de moda y publicidad.
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATÁLOGO
+===================================================== -->
+
+<section class="seccion seccion-vino">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion titulo-blanco">
+
+            <p>
+
+                COLECCIÓN
+
+            </p>
+
+            <h2>
+
+                Productos destacados
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="producto-card">
+
+                    <img src="img/vestido1.jpg"
+                         alt="Vestido Elegance">
+
+                    <div>
+
+                        <span>
+
+                            VESTIDO
+
+                        </span>
+
+                        <h3>
+
+                            Vestido Elegance
+
+                        </h3>
+
+                        <p>
+
+                            Diseño elegante para ocasiones
+                            especiales.
+
+                        </p>
+
+                        <strong>
+
+                            $45.00
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="producto-card">
+
+                    <img src="img/vestido2.jpg"
+                         alt="Vestido Classic">
+
+                    <div>
+
+                        <span>
+
+                            VESTIDO
+
+                        </span>
+
+                        <h3>
+
+                            Vestido Classic
+
+                        </h3>
+
+                        <p>
+
+                            Una opción moderna para crear
+                            diferentes outfits.
+
+                        </p>
+
+                        <strong>
+
+                            $39.00
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="producto-card">
+
+                    <img src="img/accesorios.jpg"
+                         alt="Accesorios Nicole">
+
+                    <div>
+
+                        <span>
+
+                            ACCESORIOS
+
+                        </span>
+
+                        <h3>
+
+                            Colección Nicole
+
+                        </h3>
+
+                        <p>
+
+                            Accesorios para complementar
+                            tu estilo.
+
+                        </p>
+
+                        <strong>
+
+                            $18.00
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ENLACES A LAS OTRAS SECCIONES
+===================================================== -->
+
+<section class="seccion seccion-clara">
+
+    <div class="container">
+
+
+        <div class="titulo-seccion">
+
+            <p>
+
+                MÁS DEL PROYECTO
+
+            </p>
+
+            <h2>
+
+                Aprende y comprueba lo aprendido
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="row justify-content-center g-4">
+
+
+            <div class="col-md-5">
+
+                <a href="herramientas.html"
+                   class="boton-enlace">
+
+                    <i class="bi bi-google"></i>
+
+                    <div>
+
+                        <strong>
+
+                            15 herramientas de Google
+
+                        </strong>
+
+                        <small>
+
+                            Conoce las herramientas investigadas.
+
+                        </small>
+
+                    </div>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="col-md-5">
+
+                <a href="cuestionario.html"
+                   class="boton-enlace">
+
+                    <i class="bi bi-patch-question"></i>
+
+                    <div>
+
+                        <strong>
+
+                            Cuestionario Web
+
+                        </strong>
+
+                        <small>
+
+                            Pon a prueba tus conocimientos.
+
+                        </small>
+
+                    </div>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer-nicole">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-md-6">
+
+                <img src="img/logo-nicole.svg"
+                     alt="NICOLE FASHION"
+                     class="logo-footer">
+
+                <p>
+
+                    NICOLE FASHION es un proyecto académico
+                    que combina moda, diseño y tecnologías
+                    de desarrollo web.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+
+                <h4>
+
+                    Investigación
+
+                </h4>
+
+
+                <a href="javascript.html">
+
+                    JavaScript
+
+                </a>
+
+
+                <a href="jquery.html">
+
+                    jQuery
+
+                </a>
+
+
+                <a href="json.html">
+
+                    JSON
+
+                </a>
+
+
+                <a href="hosting.html">
+
+                    Hosting y Dominios
+
+                </a>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+
+                <h4>
+
+                    Proyecto
+
+                </h4>
+
+
+                <a href="#google-ia">
+
+                    Google AI
+
+                </a>
+
+
+                <a href="cuestionario.html">
+
+                    Cuestionario
+
+                </a>
+
+
+                <a href="index.html">
+
+                    Inicio
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 NICOLE FASHION | Proyecto académico
+
+            </p>
+
+            <p>
+
+                HTML · CSS · Bootstrap · JavaScript · jQuery · JSON · Google IA
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Nuestro JavaScript -->
+
+<script src="script.js"></script>
+
+
+<!-- =====================================================
+     ANIMACIÓN SUAVE PARA GOOGLE IA
+===================================================== -->
+
+<script>
+
+    document.querySelectorAll('a[href="#google-ia"]').forEach(function(enlace) {
+
+        enlace.addEventListener('click', function(event) {
+
+            event.preventDefault();
+
+            const seccion = document.querySelector('#google-ia');
+
+            seccion.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+
+</html>

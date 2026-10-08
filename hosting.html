@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hosting y Dominios | NICOLE FASHION</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-nicole sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center"
+           href="index.html">
+
+            <img src="img/logo-nicole.svg"
+                 alt="Logo NICOLE FASHION"
+                 class="logo-navbar">
+
+            <span>NICOLE FASHION</span>
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="menuPrincipal">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="javascript.html">
+                        JavaScript
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="jquery.html">
+                        jQuery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="json.html">
+                        JSON
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="hosting.html">
+                        Hosting
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="herramientas.html">
+                        Google AI
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="cuestionario.html">
+                        Cuestionario
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-2">
+
+                    <button id="modoBtn"
+                            class="btn btn-modo"
+                            type="button">
+
+                        <i class="bi bi-moon-stars-fill"></i>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     ENCABEZADO
+===================================================== -->
+
+<header class="encabezado-investigacion">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <span class="etiqueta-investigacion">
+                    INVESTIGACIÓN 04
+                </span>
+
+                <h1>
+                    Web Hosting y Dominios
+                </h1>
+
+                <p>
+                    Conceptos fundamentales para publicar un sitio
+                    web y hacerlo accesible desde Internet.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5 text-center">
+
+                <img src="img/hosting.jpg"
+                     alt="Web Hosting"
+                     class="img-investigacion">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTENIDO
+===================================================== -->
+
+<main class="pagina-investigacion">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             WEB HOSTING
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-server"></i>
+                ¿Qué es Web Hosting?
+            </h2>
+
+            <p>
+                El <strong>Web Hosting</strong> o alojamiento web es
+                un servicio que permite guardar los archivos de un
+                sitio web en servidores conectados a Internet.
+            </p>
+
+            <p>
+                Cuando una persona entra a una página web, el navegador
+                solicita sus archivos al servidor y posteriormente
+                muestra el contenido.
+            </p>
+
+            <div class="codigo">
+
+<pre><code>Usuario
+   ↓
+Navegador
+   ↓
+Internet
+   ↓
+Servidor
+   ↓
+Archivos del sitio web
+   ↓
+Página mostrada</code></pre>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ¿QUÉ SE GUARDA?
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-folder2-open"></i>
+                ¿Qué se puede guardar en un hosting?
+            </h2>
+
+            <p>
+                Un servicio de hosting puede almacenar diferentes
+                elementos necesarios para que una página funcione.
+            </p>
+
+
+            <div class="row g-4 mt-2">
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <i class="bi bi-filetype-html"></i>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            Estructura y contenido de las páginas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <i class="bi bi-filetype-css"></i>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Diseño, colores, tamaños y estilos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <i class="bi bi-filetype-js"></i>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interactividad y comportamiento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <i class="bi bi-images"></i>
+
+                        <h3>Imágenes</h3>
+
+                        <p>
+                            Fotografías, logos e ilustraciones.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TIPOS DE HOSTING
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-layers"></i>
+                Tipos de Hosting
+            </h2>
+
+
+            <div class="table-responsive">
+
+                <table class="table tabla-nicole">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Tipo
+                            </th>
+
+                            <th>
+                                Características
+                            </th>
+
+                            <th>
+                                Uso común
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>Compartido</strong>
+                            </td>
+
+                            <td>
+                                Varios sitios utilizan recursos
+                                del mismo servidor.
+                            </td>
+
+                            <td>
+                                Sitios pequeños y proyectos básicos.
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>VPS</strong>
+                            </td>
+
+                            <td>
+                                Un servidor físico se divide en
+                                servidores virtuales.
+                            </td>
+
+                            <td>
+                                Proyectos que necesitan más control.
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Cloud</strong>
+                            </td>
+
+                            <td>
+                                Utiliza recursos distribuidos
+                                en infraestructura de nube.
+                            </td>
+
+                            <td>
+                                Aplicaciones y proyectos que
+                                pueden crecer rápidamente.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             VERCEL
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-cloud-arrow-up"></i>
+                ¿Cómo funciona Vercel?
+            </h2>
+
+            <p>
+                Vercel es una plataforma utilizada para desplegar
+                sitios y aplicaciones web. Puede conectarse con un
+                repositorio de código y generar despliegues cuando
+                se realizan cambios. :contentReference[oaicite:1]{index=1}
+            </p>
+
+            <p>
+                Para un proyecto como <strong>NICOLE FASHION</strong>,
+                se puede utilizar para publicar los archivos HTML,
+                CSS, JavaScript e imágenes.
+            </p>
+
+
+            <div class="flujo">
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-code-slash"></i>
+
+                    <strong>Proyecto</strong>
+
+                    <span>
+                        HTML, CSS y JS
+                    </span>
+
+                </div>
+
+
+                <div class="flecha">
+                    →
+                </div>
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-github"></i>
+
+                    <strong>GitHub</strong>
+
+                    <span>
+                        Código del proyecto
+                    </span>
+
+                </div>
+
+
+                <div class="flecha">
+                    →
+                </div>
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-cloud"></i>
+
+                    <strong>Vercel</strong>
+
+                    <span>
+                        Despliegue
+                    </span>
+
+                </div>
+
+
+                <div class="flecha">
+                    →
+                </div>
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-globe"></i>
+
+                    <strong>Internet</strong>
+
+                    <span>
+                        Sitio publicado
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DOMINIO
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-globe2"></i>
+                ¿Qué es un dominio?
+            </h2>
+
+            <p>
+                Un <strong>dominio</strong> es el nombre que una
+                persona escribe en el navegador para acceder a
+                un sitio web.
+            </p>
+
+            <p>
+                Por ejemplo:
+            </p>
+
+            <div class="codigo">
+
+<pre><code>nicolefashion.com</code></pre>
+
+            </div>
+
+            <p>
+                Los dominios hacen que sea más sencillo recordar
+                y visitar un sitio en lugar de utilizar una dirección
+                numérica.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PARTES DEL DOMINIO
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-diagram-3"></i>
+                Partes de un dominio
+            </h2>
+
+            <div class="codigo">
+
+<pre><code>www.nicolefashion.com
+│       │             │
+│       │             └── Extensión
+│       │
+│       └──────────────── Nombre del dominio
+│
+└──────────────────────── Subdominio</code></pre>
+
+            </div>
+
+
+            <div class="table-responsive mt-4">
+
+                <table class="table tabla-nicole">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Parte
+                            </th>
+
+                            <th>
+                                Ejemplo
+                            </th>
+
+                            <th>
+                                Descripción
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Subdominio
+                            </td>
+
+                            <td>
+                                www
+                            </td>
+
+                            <td>
+                                Identifica una sección o variante
+                                del dominio.
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Nombre
+                            </td>
+
+                            <td>
+                                nicolefashion
+                            </td>
+
+                            <td>
+                                Nombre elegido para el sitio.
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Extensión
+                            </td>
+
+                            <td>
+                                .com
+                            </td>
+
+                            <td>
+                                Parte final del dominio.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TLD
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-tag"></i>
+                ¿Qué es un TLD?
+            </h2>
+
+            <p>
+                TLD significa <strong>Top-Level Domain</strong>.
+                Es la parte final de un dominio.
+            </p>
+
+
+            <div class="row g-4 mt-2">
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <h3>.com</h3>
+
+                        <p>
+                            Muy utilizado para sitios comerciales
+                            y proyectos generales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <h3>.org</h3>
+
+                        <p>
+                            Frecuente en organizaciones y
+                            proyectos comunitarios.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <h3>.edu</h3>
+
+                        <p>
+                            Asociado principalmente con
+                            instituciones educativas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <h3>.sv</h3>
+
+                        <p>
+                            Extensión territorial correspondiente
+                            a El Salvador.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SUBDOMINIO
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-link-45deg"></i>
+                ¿Qué es un subdominio?
+            </h2>
+
+            <p>
+                Un subdominio es una parte adicional que se coloca
+                antes del dominio principal para identificar una
+                sección específica.
+            </p>
+
+            <div class="codigo">
+
+<pre><code>blog.nicolefashion.com
+
+blog
+  ↓
+Subdominio
+
+nicolefashion
+  ↓
+Dominio
+
+.com
+  ↓
+TLD</code></pre>
+
+            </div>
+
+            <p>
+                Por ejemplo, una tienda podría utilizar un subdominio
+                para separar un blog o una sección de ayuda.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DNS
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-signpost-2"></i>
+                ¿Qué es DNS?
+            </h2>
+
+            <p>
+                DNS significa <strong>Domain Name System</strong>.
+                Su función principal es ayudar a relacionar nombres
+                de dominio con la información necesaria para encontrar
+                los servidores correspondientes.
+            </p>
+
+            <p>
+                Gracias al DNS, podemos utilizar nombres fáciles de
+                recordar en lugar de depender directamente de
+                direcciones IP.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FLUJO DNS
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-diagram-3-fill"></i>
+                ¿Cómo funciona una consulta DNS?
+            </h2>
+
+
+            <div class="flujo">
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-person"></i>
+
+                    <strong>Usuario</strong>
+
+                    <span>
+                        Escribe el dominio
+                    </span>
+
+                </div>
+
+
+                <div class="flecha">
+                    →
+                </div>
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-search"></i>
+
+                    <strong>DNS</strong>
+
+                    <span>
+                        Busca información
+                    </span>
+
+                </div>
+
+
+                <div class="flecha">
+                    →
+                </div>
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-hdd-network"></i>
+
+                    <strong>Servidor</strong>
+
+                    <span>
+                        Recibe la solicitud
+                    </span>
+
+                </div>
+
+
+                <div class="flecha">
+                    →
+                </div>
+
+
+                <div class="paso-flujo">
+
+                    <i class="bi bi-window"></i>
+
+                    <strong>Sitio web</strong>
+
+                    <span>
+                        Se muestra
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DNS Y VERCEL
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-cloud-check"></i>
+                Dominios en Vercel
+            </h2>
+
+            <p>
+                Vercel proporciona una dirección
+                <strong>.vercel.app</strong> para los despliegues.
+                También permite agregar un dominio personalizado
+                desde la configuración del proyecto. :contentReference[oaicite:2]{index=2}
+            </p>
+
+            <div class="codigo">
+
+<pre><code>Proyecto NICOLE FASHION
+          ↓
+       Vercel
+          ↓
+nicole-fashion.vercel.app</code></pre>
+
+            </div>
+
+            <p>
+                Si se utiliza un dominio personalizado, es necesario
+                configurar los registros DNS indicados por el proveedor.
+                Para un dominio principal y un subdominio, el tipo de
+                registro puede ser diferente. :contentReference[oaicite:3]{index=3}
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EJEMPLO DEL PROYECTO
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-bag-heart"></i>
+                Aplicación a NICOLE FASHION
+            </h2>
+
+            <p>
+                Para publicar el proyecto NICOLE FASHION se puede
+                seguir este proceso:
+            </p>
+
+
+            <div class="row g-4 mt-2">
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <span class="numero-paso">
+                            01
+                        </span>
+
+                        <h3>
+                            Crear
+                        </h3>
+
+                        <p>
+                            Se desarrollan los archivos HTML,
+                            CSS y JavaScript.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <span class="numero-paso">
+                            02
+                        </span>
+
+                        <h3>
+                            Subir
+                        </h3>
+
+                        <p>
+                            El proyecto se guarda en un
+                            repositorio de GitHub.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <span class="numero-paso">
+                            03
+                        </span>
+
+                        <h3>
+                            Desplegar
+                        </h3>
+
+                        <p>
+                            Vercel utiliza el proyecto para
+                            generar una versión publicada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta-info">
+
+                        <span class="numero-paso">
+                            04
+                        </span>
+
+                        <h3>
+                            Compartir
+                        </h3>
+
+                        <p>
+                            Se comparte la dirección del
+                            sitio con los usuarios.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONCLUSIÓN
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-lightbulb"></i>
+                Conclusión
+            </h2>
+
+            <p>
+                El Web Hosting permite almacenar y publicar los
+                archivos de un sitio web para que puedan ser
+                consultados desde Internet.
+            </p>
+
+            <p>
+                Por otra parte, el dominio proporciona una dirección
+                fácil de recordar para acceder al sitio. El DNS ayuda
+                a relacionar ese nombre con la infraestructura donde
+                está publicado.
+            </p>
+
+            <p>
+                En el caso de NICOLE FASHION, GitHub puede utilizarse
+                para guardar el código y Vercel para realizar el
+                despliegue del proyecto.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RECURSOS
+        ================================================== -->
+
+        <section class="caja-investigacion">
+
+            <h2>
+                <i class="bi bi-book"></i>
+                Recursos consultados
+            </h2>
+
+            <p>
+                Para esta investigación se pueden consultar los
+                siguientes recursos:
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+
+                <a href="https://vercel.com/docs/deployments/overview"
+                   target="_blank"
+                   class="btn btn-nicole">
+
+                    Documentación de Vercel
+
+                </a>
+
+
+                <a href="https://vercel.com/docs/domains/working-with-domains"
+                   target="_blank"
+                   class="btn btn-nicole">
+
+                    Dominios en Vercel
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer-nicole">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h3>
+                    NICOLE FASHION
+                </h3>
+
+                <p>
+                    Moda, tecnología y aprendizaje web.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-6 text-md-end">
+
+                <p>
+                    Investigación sobre tecnologías web
+                </p>
+
+                <p>
+                    © <span class="anio-actual"></span>
+                    NICOLE FASHION
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- =====================================================
+     JAVASCRIPT DEL PROYECTO
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

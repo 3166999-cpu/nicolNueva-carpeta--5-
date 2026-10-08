@@ -1,0 +1,1201 @@
+/* =========================================
+   NICOLE FASHION
+   ESTILOS GENERALES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F7EFE8;
+    color: #4F3A40;
+    line-height: 1.7;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* =========================================
+   COLORES
+========================================= */
+
+:root {
+    --vino: #6B1E32;
+    --vino-oscuro: #4A1423;
+    --crema: #F7EFE8;
+    --dorado: #C9A86A;
+    --blanco: #FFFFFF;
+    --texto: #4F3A40;
+    --gris: #777077;
+    --gris-claro: #eee4df;
+}
+
+/* =========================================
+   SELECCIÓN
+========================================= */
+
+::selection {
+    background: #6B1E32;
+    color: white;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar-nicole {
+    background: rgba(107, 30, 50, 0.98);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-nicole.navbar-pequena {
+    padding: 6px 0;
+}
+
+.logo-nicole {
+    height: 55px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-nicole:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nicole .navbar-brand {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navbar-nicole .nav-link {
+    color: white;
+    margin: 0 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nicole .nav-link:hover {
+    color: #C9A86A;
+}
+
+.navbar-nicole .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #C9A86A;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.navbar-nicole .nav-link:hover::after {
+    width: 70%;
+}
+
+/* =========================================
+   BOTÓN MODO OSCURO
+========================================= */
+
+.btn-modo {
+    border: 1px solid #C9A86A;
+    color: white;
+    border-radius: 30px;
+    padding: 7px 13px;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.btn-modo:hover {
+    background: #C9A86A;
+    color: #4A1423;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+}
+
+.hero .carousel-item {
+    height: 650px;
+    position: relative;
+}
+
+.hero .carousel-item img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.hero .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 15, 25, 0.72),
+        rgba(42, 15, 25, 0.15)
+    );
+}
+
+.hero-contenido {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 620px;
+}
+
+.hero-contenido small {
+    color: #C9A86A;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero-contenido h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    margin: 15px 0;
+}
+
+.hero-contenido p {
+    font-size: 1.1rem;
+    max-width: 550px;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.btn-nicole {
+    background: #6B1E32;
+    color: white;
+    border: 2px solid #6B1E32;
+    padding: 11px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-nicole:hover {
+    background: #C9A86A;
+    border-color: #C9A86A;
+    color: #4A1423;
+    transform: translateY(-3px);
+}
+
+.btn-dorado {
+    background: #C9A86A;
+    color: #4A1423;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-dorado:hover {
+    background: #6B1E32;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-seccion p {
+    color: #C9A86A;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.titulo-seccion h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #6B1E32;
+    margin-top: 8px;
+}
+
+.titulo-seccion .linea {
+    width: 70px;
+    height: 3px;
+    background: #C9A86A;
+    margin: 15px auto;
+}
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.seccion {
+    padding: 80px 0;
+}
+
+.seccion-clara {
+    background: #FFFFFF;
+}
+
+.seccion-crema {
+    background: #F7EFE8;
+}
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion {
+    padding: 80px 0;
+}
+
+.presentacion-imagen {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(107, 30, 50, 0.18);
+}
+
+.presentacion-texto h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+    font-size: 2.8rem;
+}
+
+.presentacion-texto p {
+    color: #777077;
+}
+
+/* =========================================
+   TARJETAS DE PRODUCTOS
+========================================= */
+
+.productos-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(107, 30, 50, 0.10);
+    transition: all 0.4s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(107, 30, 50, 0.18);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.producto-card:hover img {
+    transform: scale(1.04);
+}
+
+.producto-info {
+    padding: 25px;
+}
+
+.producto-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+}
+
+.producto-info strong {
+    color: #6B1E32;
+    font-size: 1.2rem;
+}
+
+/* =========================================
+   TARJETAS DE TECNOLOGÍA
+========================================= */
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tech-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #4F3A40;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    color: #6B1E32;
+    box-shadow: 0 14px 30px rgba(107, 30, 50, 0.15);
+}
+
+.tech-card i {
+    font-size: 2.5rem;
+    color: #C9A86A;
+    margin-bottom: 15px;
+}
+
+.tech-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+}
+
+/* =========================================
+   TARJETAS DE COLORES
+========================================= */
+
+.color-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.color-muestra {
+    height: 100px;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.color-vino {
+    background: #6B1E32;
+}
+
+.color-crema {
+    background: #F7EFE8;
+    border: 1px solid #ddd;
+}
+
+.color-dorado {
+    background: #C9A86A;
+}
+
+.color-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+}
+
+/* =========================================
+   PÁGINAS DE INVESTIGACIÓN
+========================================= */
+
+.pagina-investigacion {
+    padding-bottom: 70px;
+}
+
+.encabezado-investigacion {
+    background: linear-gradient(
+        135deg,
+        #6B1E32,
+        #4A1423
+    );
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.encabezado-investigacion h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+}
+
+.encabezado-investigacion p {
+    max-width: 800px;
+    margin: 15px auto 0;
+}
+
+.caja-investigacion {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.caja-investigacion h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+    margin-bottom: 18px;
+}
+
+.caja-investigacion h3 {
+    color: #6B1E32;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-investigacion {
+    color: #C9A86A;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.lista-investigacion {
+    padding-left: 25px;
+}
+
+.lista-investigacion li {
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   IMÁGENES DE INVESTIGACIÓN
+========================================= */
+
+.imagen-investigacion {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   CÓDIGO
+========================================= */
+
+.codigo {
+    background: #28171d;
+    color: #f8eeee;
+    border-radius: 15px;
+    padding: 25px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-family: Consolas, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.codigo code {
+    color: #f8eeee;
+}
+
+/* =========================================
+   TABLAS
+========================================= */
+
+.tabla-nicole {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabla-nicole th {
+    background: #6B1E32;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-nicole td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-nicole tr:hover td {
+    background: #F7EFE8;
+}
+
+/* =========================================
+   COMPARACIONES
+========================================= */
+
+.comparacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.comparacion-box {
+    background: #F7EFE8;
+    border-left: 5px solid #C9A86A;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.comparacion-box h3 {
+    color: #6B1E32;
+}
+
+/* =========================================
+   FLUJO
+========================================= */
+
+.flujo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.paso-flujo {
+    background: white;
+    border: 2px solid #C9A86A;
+    color: #6B1E32;
+    padding: 15px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flecha {
+    color: #C9A86A;
+    font-size: 1.5rem;
+}
+
+/* =========================================
+   NÚMERO DE PASO
+========================================= */
+
+.numero-paso {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6B1E32;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   EJEMPLOS INTERACTIVOS
+========================================= */
+
+.resultado-interactivo {
+    background: #F7EFE8;
+    border: 1px solid #C9A86A;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    min-height: 80px;
+}
+
+.resultado-interactivo pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* =========================================
+   GOOGLE AI / 15 HERRAMIENTAS
+========================================= */
+
+.google-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.google-card {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 25px rgba(107, 30, 50, 0.09);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    border-top: 4px solid #C9A86A;
+}
+
+.google-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(107, 30, 50, 0.17);
+}
+
+.google-numero {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6B1E32;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.google-icono {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7EFE8;
+    color: #6B1E32;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.google-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+    margin-bottom: 10px;
+    padding-right: 35px;
+}
+
+.google-card p {
+    color: #777077;
+    font-size: 0.95rem;
+}
+
+.google-categoria {
+    display: inline-block;
+    background: #F7EFE8;
+    color: #6B1E32;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* =========================================
+   CUESTIONARIO
+========================================= */
+
+.pregunta {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.pregunta:hover {
+    transform: translateY(-3px);
+}
+
+.numero-pregunta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #6B1E32;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.pregunta h3 {
+    color: #6B1E32;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.opcion {
+    display: block;
+    background: #F7EFE8;
+    padding: 13px 17px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.opcion:hover {
+    background: #eadbd4;
+}
+
+.opcion input {
+    margin-right: 10px;
+    accent-color: #6B1E32;
+}
+
+/* =========================================
+   RESULTADO DEL CUESTIONARIO
+========================================= */
+
+.resultado-cuestionario {
+    background: white;
+    border-radius: 25px;
+    padding: 45px 30px;
+    margin-top: 35px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(107, 30, 50, 0.13);
+    border-top: 5px solid #C9A86A;
+}
+
+.resultado-icono {
+    width: 80px;
+    height: 80px;
+    background: #F7EFE8;
+    color: #C9A86A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+}
+
+.resultado-cuestionario h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6B1E32;
+}
+
+.porcentaje-resultado {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #C9A86A;
+    margin: 10px 0;
+}
+
+/* =========================================
+   ALERTAS
+========================================= */
+
+.alert {
+    border-radius: 14px;
+    border: none;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer-nicole {
+    background: #4A1423;
+    color: white;
+    padding: 55px 0 25px;
+}
+
+.footer-nicole h3 {
+    font-family: 'Playfair Display', serif;
+    color: #C9A86A;
+}
+
+.footer-nicole a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nicole a:hover {
+    color: #C9A86A;
+}
+
+.footer-linea {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 30px 0 20px;
+}
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================
+   ENLACES
+========================================= */
+
+.enlace-nicole {
+    color: #6B1E32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace-nicole:hover {
+    color: #C9A86A;
+}
+
+/* =========================================
+   IMÁGENES GENERALES
+========================================= */
+
+.img-redonda {
+    border-radius: 20px;
+}
+
+.img-sombra {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.modo-oscuro {
+    background: #21171b;
+    color: #eee;
+}
+
+body.modo-oscuro .seccion-clara,
+body.modo-oscuro .producto-card,
+body.modo-oscuro .tech-card,
+body.modo-oscuro .color-card,
+body.modo-oscuro .caja-investigacion,
+body.modo-oscuro .google-card,
+body.modo-oscuro .pregunta,
+body.modo-oscuro .resultado-cuestionario,
+body.modo-oscuro .tabla-nicole {
+    background: #2d2025;
+    color: #eee;
+}
+
+body.modo-oscuro .titulo-seccion h2,
+body.modo-oscuro .presentacion-texto h2,
+body.modo-oscuro .caja-investigacion h2,
+body.modo-oscuro .caja-investigacion h3,
+body.modo-oscuro .tech-card h3,
+body.modo-oscuro .color-card h3,
+body.modo-oscuro .producto-info h3,
+body.modo-oscuro .google-card h3,
+body.modo-oscuro .pregunta h3,
+body.modo-oscuro .resultado-cuestionario h2 {
+    color: #e5b9c6;
+}
+
+body.modo-oscuro .presentacion-texto p,
+body.modo-oscuro .google-card p,
+body.modo-oscuro .producto-info p {
+    color: #d3c5ca;
+}
+
+body.modo-oscuro .seccion-crema,
+body.modo-oscuro .comparacion-box,
+body.modo-oscuro .resultado-interactivo,
+body.modo-oscuro .opcion,
+body.modo-oscuro .google-icono {
+    background: #35262c;
+    color: #eee;
+}
+
+body.modo-oscuro .tabla-nicole td {
+    border-color: #49363d;
+}
+
+body.modo-oscuro .tabla-nicole tr:hover td {
+    background: #392a30;
+}
+
+body.modo-oscuro .comparacion-box {
+    border-left-color: #C9A86A;
+}
+
+body.modo-oscuro .opcion:hover {
+    background: #49343c;
+}
+
+/* =========================================
+   CARRUSEL
+========================================= */
+
+.carousel-fade .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #C9A86A;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .hero .carousel-item,
+    .hero .carousel-item img {
+        height: 560px;
+    }
+
+    .hero-contenido {
+        left: 7%;
+        right: 7%;
+    }
+
+    .hero-contenido h1 {
+        font-size: 3.5rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .google-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productos-preview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero .carousel-item,
+    .hero .carousel-item img {
+        height: 500px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-contenido p {
+        font-size: 0.95rem;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 2.3rem;
+    }
+
+    .presentacion-imagen {
+        height: 380px;
+        margin-bottom: 25px;
+    }
+
+    .productos-preview,
+    .tech-grid,
+    .google-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparacion {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado-investigacion h1 {
+        font-size: 2.7rem;
+    }
+
+    .encabezado-investigacion {
+        padding: 60px 20px;
+    }
+
+    .caja-investigacion {
+        padding: 25px 20px;
+    }
+
+    .flujo {
+        flex-direction: column;
+    }
+
+    .flecha {
+        transform: rotate(90deg);
+    }
+
+    .navbar-nicole .nav-link {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero .carousel-item,
+    .hero .carousel-item img {
+        height: 470px;
+    }
+
+    .hero-contenido {
+        left: 25px;
+        right: 25px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-contenido small {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .seccion,
+    .presentacion {
+        padding: 55px 0;
+    }
+
+    .producto-card img {
+        height: 360px;
+    }
+
+    .imagen-investigacion {
+        height: 280px;
+    }
+
+    .codigo {
+        font-size: 0.78rem;
+        padding: 18px;
+    }
+
+    .resultado-cuestionario {
+        padding: 35px 20px;
+    }
+
+    .porcentaje-resultado {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* =========================================
+   LOGO E IMÁGENES AGREGADAS
+   SOLO PARA PERMITIR USAR IMÁGENES Y LOGO
+========================================= */
+
+/* Logo del menú */
+.logo-navbar {
+    height: 55px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Logo del pie de página */
+.logo-footer {
+    height: 55px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Imágenes de productos */
+.imagen-producto {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Imágenes del carrusel */
+.imagen-carrusel {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Imagen de presentación */
+.imagen-presentacion {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Imágenes de investigación */
+.imagen-investigacion-agregada {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+    .logo-navbar,
+    .logo-footer {
+        height: 50px;
+    }
+
+    .imagen-carrusel {
+        height: 500px;
+    }
+
+    .imagen-presentacion {
+        height: 380px;
+    }
+
+    .imagen-producto {
+        height: 360px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-navbar,
+    .logo-footer {
+        height: 45px;
+    }
+
+    .imagen-carrusel {
+        height: 470px;
+    }
+
+    .imagen-producto {
+        height: 360px;
+    }
+
+    .imagen-investigacion-agregada {
+        height: 280px;
+    }
+}
